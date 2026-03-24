@@ -1,0 +1,143 @@
+﻿name: Bug Report / Bug 反馈
+description: Report a crash, broken event, broken effect, compatibility problem, or other technical issue. / 提交崩溃、事件错误、效果错误、兼容性问题等技术性故障。
+title: "[Bug / 问题]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for concrete technical or logic problems with the mod.
+
+        Use **Content Issue** instead of this form for:
+        - localization typos or missing text
+        - wrong portraits, icons, or GFX
+        - incorrect names, descriptions, or flavor text
+
+        Please use **Discussions** instead of Issues for:
+        - gameplay suggestions
+        - lore or worldbuilding discussion
+        - balance ideas
+        - general modding talk
+
+        Before submitting, please check whether the same problem has already been reported.
+
+        此模板仅用于技术性或逻辑性问题反馈。
+
+        以下内容请改用 **Content Issue**：
+        - 本地化错字、缺字、未翻译
+        - 肖像、图标或 GFX 错误
+        - 名称、描述、风味文本错误
+
+        以下内容请发到 **Discussions**，不要发到 Issues：
+        - 玩法建议
+        - 设定或世界观讨论
+        - 平衡性想法
+        - 一般 MOD 制作交流
+
+        提交前请先检查是否已有重复反馈。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary / 问题概述
+      description: Briefly describe the problem.
+      placeholder: The event fires twice and breaks the country leader assignment.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type / 问题类型
+      options:
+        - Crash / 崩溃
+        - Broken Event or Decision / 事件或决议错误
+        - Focus Tree Issue / 国策树问题
+        - Broken Scripted Effect or Trigger / 效果或触发器错误
+        - Compatibility Problem / 兼容性问题
+        - Other / 其他
+    validations:
+      required: true
+
+  - type: input
+    id: game_version
+    attributes:
+      label: Game Version / 游戏版本
+      description: For example, 1.15.x
+      placeholder: 1.15.x
+    validations:
+      required: true
+
+  - type: input
+    id: mod_version
+    attributes:
+      label: Mod Version / MOD 版本
+      description: Branch, release tag, or build date if known.
+      placeholder: main / v0.x.x / 2026-03-20 build
+    validations:
+      required: true
+
+  - type: input
+    id: dlc
+    attributes:
+      label: DLCs Enabled / 已启用 DLC
+      description: List enabled DLCs, or write None.
+      placeholder: No Step Back, By Blood Alone
+    validations:
+      required: true
+
+  - type: input
+    id: submods
+    attributes:
+      label: Submods Enabled / 已启用子模组
+      description: List enabled submods, or write None.
+      placeholder: FPS Map / None
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps To Reproduce / 复现步骤
+      description: Tell us exactly how to reproduce the issue.
+      placeholder: |
+        1. Start a new 1929 game as ...
+        2. Complete ...
+        3. Select ...
+        4. The issue appears
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result / 预期结果
+      placeholder: The event should assign the correct leader and continue normally.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Result / 实际结果
+      placeholder: The game assigns no leader and the event chain stops.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, Screenshots, Save Files / 日志、截图、存档
+      description: Paste key error messages or drag files here if available.
+      placeholder: error.log excerpt, screenshot link, or save file notes
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Context / 其他补充
+      description: Add any extra context that may help.
+    validations:
+      required: false

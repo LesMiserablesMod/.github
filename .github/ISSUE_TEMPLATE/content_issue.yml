@@ -1,0 +1,104 @@
+﻿name: Content Issue / 内容问题
+description: Report localization mistakes, portrait/icon errors, wrong descriptions, or other content-specific issues. / 提交本地化、肖像、图标、描述等内容层面的问题。
+title: "[Content / 内容]: "
+labels:
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for content-specific issues in the mod.
+
+        Examples:
+        - localization typos or missing text
+        - wrong portraits, icons, or GFX assignments
+        - incorrect descriptions, names, or flavor text
+        - content mismatches between script and presentation
+
+        Please use **Discussions** instead of Issues for:
+        - open lore debate
+        - setting proposals
+        - balance discussion
+        - general feedback without a concrete error
+
+        此模板适合提交内容层面的明确问题，例如：
+        - 本地化错字、缺字、未翻译
+        - 肖像、图标或 GFX 指向错误
+        - 名称、描述、风味文本错误
+        - 脚本内容与表现内容不一致
+
+        以下内容请发到 **Discussions**：
+        - 开放式设定争论
+        - 世界观提案
+        - 平衡性讨论
+        - 没有明确错误的一般反馈
+
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content Type / 内容类型
+      options:
+        - Localization / 本地化
+        - Portrait / 肖像
+        - Icon / 图标
+        - Event Text / 事件文本
+        - Focus Tree Text / 国策树文本
+        - Description or Flavor / 描述或风味文本
+        - Asset Mapping / 资源映射
+        - Other / 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary / 问题概述
+      description: Briefly describe what is wrong.
+      placeholder: The portrait shown for character X is actually character Y.
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Where It Appears / 出现位置
+      description: Event ID, focus name, country tag, character name, state, decision, or UI screen.
+      placeholder: Event abc.12 / focus XYZ / country tag QIN
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_content
+    attributes:
+      label: Current Content / 当前内容
+      description: Paste the incorrect text or describe the wrong asset currently shown.
+      placeholder: The current text says ... / the current icon is ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_content
+    attributes:
+      label: Expected Content / 预期内容
+      description: Tell us what it should be instead.
+      placeholder: It should say ... / it should use the portrait for ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_basis
+    attributes:
+      label: Source or Basis / 依据或来源
+      description: Optional but useful. Cite in-mod context, design notes, or reference material if relevant.
+      placeholder: Based on event chain ..., file ..., or the project chronology ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or Files / 截图或文件
+      description: Attach screenshots or relevant files if available.
+      placeholder: Screenshot, file path, or comparison image
+    validations:
+      required: false

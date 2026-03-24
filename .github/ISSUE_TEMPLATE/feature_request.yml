@@ -1,0 +1,101 @@
+﻿name: Feature Request / 功能请求
+description: Propose a concrete feature, content addition, or improvement for the mod. / 提交可落实的功能、内容或改进建议。
+title: "[Feature / 功能]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for concrete feature requests that can be evaluated as implementable work.
+
+        Please use **Discussions** instead of Issues for:
+        - open-ended lore or worldbuilding discussion
+        - broad balance debates
+        - early brainstorming without a clear proposal
+        - general community conversation
+
+        If your idea is still exploratory, post it in Discussions first and open an Issue later if it becomes a concrete task.
+
+        此模板适合提交可落实的功能、内容或改进建议。
+
+        以下内容请优先发到 **Discussions**：
+        - 开放式设定讨论
+        - 大范围平衡争论
+        - 还没有形成明确方案的脑暴
+        - 一般社区交流
+
+        如果想法还比较早期，建议先在 Discussions 讨论，形成明确方案后再开 Issue。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Proposal Summary / 提案概述
+      description: Summarize the feature request in a few sentences.
+      placeholder: Add a regional event chain for ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request Type / 请求类型
+      options:
+        - New Event Chain / 新事件链
+        - Focus Tree Expansion / 国策树扩展
+        - Decision or Mechanic / 决议或机制
+        - Localization Improvement / 本地化改进
+        - GFX or UI Improvement / 美术或界面改进
+        - Quality of Life / 体验优化
+        - Other / 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement / 现有问题
+      description: What is missing, weak, or unsatisfactory in the current version?
+      placeholder: The current path ends too early and leaves the region without follow-up content.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution / 建议方案
+      description: Describe what you want to add or change.
+      placeholder: |
+        Add a new branch that ...
+        Include events for ...
+        Unlock decisions that ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: gameplay_impact
+    attributes:
+      label: Gameplay Impact / 对玩法的影响
+      description: Explain how this would affect gameplay, balance, or player experience.
+      placeholder: This would make the 1929 opening more dynamic for ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References or Supporting Material / 参考资料或补充材料
+      description: Link relevant lore notes, screenshots, mockups, or discussion threads if available.
+      placeholder: Discussion link, draft text, reference image, or document note
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Checklist / 提交检查
+      options:
+        - label: I checked existing Issues and Discussions for duplicates. / 我已检查现有 Issues 和 Discussions，确认没有重复内容。
+          required: true
+        - label: This request is specific enough to be tracked as a concrete task. / 这个请求已经足够具体，可以作为明确任务跟踪。
+          required: true
