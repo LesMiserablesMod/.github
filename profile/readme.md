@@ -1,89 +1,46 @@
-﻿# 悲惨世界 / LesMiserablesMod
+# 悲惨世界 / LesMiserablesMod
 
 ![Project banner](fig/banner.jpg)
 
-*Project banner / 项目横幅*
+**一个始于 1929 年的《钢铁雄心 IV》架空历史 MOD，以及围绕大型 MOD 开发建设的开源工具与资料。**
 
-LesMiserablesMod is a public development organization for our Hearts of Iron IV mod projects.
+**A Hearts of Iron IV alternate-history mod beginning in 1929, together with open-source tools and resources for large-scale mod development.**
 
-LesMiserablesMod 是我们用于开发《钢铁雄心 IV》MOD 项目的公开组织页。
+## 项目简介 / About
 
-## About / 项目简介
+LesMiserablesMod 是《悲惨世界》架空历史 MOD 的开发组织。这里既承载项目协作，也维护面向 HOI4 Modder 的编辑器、开发工具与参考资料。
 
-We are building a Hearts of Iron IV alternate history mod set in the world of *A Miserable World*.
+本世界线自法国大革命后逐渐偏离现实历史：神圣罗马帝国仍然延续，袁世凯于 1905 年建立中华帝国并推行君主立宪。游戏开局时间为 **1929 年**——旧秩序尚未倒塌，但帝国竞争、改革运动、地区冲突与意识形态矛盾正在把世界推向新的危机。
 
-Based on the project team's own chronology and worldbuilding, this timeline diverges from the French Revolution and develops into a very different twentieth century: the Holy Roman Empire survives, China becomes a constitutional empire under Yuan Shikai in 1905, and the political order of Europe and Asia enters the late 1920s under a very different balance of power.
-
-The game starts in **1929**, at a moment when the old order is still standing, but rival empires, reform movements, regional conflicts, and unresolved ideological struggles are pushing the world toward a new crisis.
-
-我们正在制作一个以《悲惨世界》架空历史时间线为背景的《钢铁雄心 IV》MOD。
-
-根据项目组构建的编年史设定与世界观内容，这条时间线自法国大革命开始偏离现实历史，并在二十世纪形成了完全不同的世界格局：神圣罗马帝国得以延续，袁世凯于 1905 年建立中华帝国并推行君主立宪，欧亚大陆的政治秩序也在此后走向了不同的发展道路。
-
-游戏开局时间为 **1929 年**。此时旧秩序仍未彻底瓦解，但各大帝国、改革派、地方势力与不同意识形态之间的矛盾已经不断积累，新的世界危机正在逼近。
-
-## World Overview / 世界观概览
-
-- A divergent world shaped by the aftermath of the French Revolution
-- A surviving Holy Roman Empire and a reshaped European order
-- The establishment of the Chinese Empire in 1905 and its consolidation after the 1920s conflicts
-- Competing empires, regional rivalries, constitutional experiments, and long-running colonial tensions
-
-- 一个从法国大革命后走向分歧的架空世界
-- 一个延续下来的神圣罗马帝国，以及被重塑的欧洲秩序
-- 1905 年建立的中华帝国，以及其在 1920 年代冲突后的进一步整合
-- 帝国竞争、地区对抗、立宪实验与长期殖民矛盾并存的全球局势
+LesMiserablesMod is the development organization behind the *Les Misérables* alternate-history mod. The timeline diverges after the French Revolution: the Holy Roman Empire survives, a constitutional Chinese Empire is established in 1905, and the game opens in **1929**, as competing empires, reform movements, regional conflicts, and ideological struggles push the old order toward a new crisis.
 
 ![Worldbuilding visual](fig/L'Arc%20de%20Triomphe.png)
 
-*Worldbuilding visual / 世界观氛围展示*
+## 项目导航 / Projects
 
-## Community Channels / 反馈与讨论
+| 项目 / Project | 简介 / Description | 入口 / Links |
+| --- | --- | --- |
+| **HOI4 Modding Tools** | 双语 HOI4 制作工具、参考资料与工作流目录。<br>Bilingual catalog of HOI4 modding tools, references, and workflows. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4-modding-tools) · [文档 / Docs](https://lesmiserablesmod.github.io/hoi4-modding-tools/) |
+| **HOI4 Mod Utilities** | 原项目的维护镜像与分支，为 VS Code 提供地图、国策树、科技树、事件、GUI 与 GFX 等预览功能。<br>A maintenance mirror and fork of the VS Code extension for map, focus tree, technology, event, GUI, and GFX previews. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4modutilities) |
+| **HOI4 Focus Tree Designer** | 浏览器端国策树设计器，支持前置与互斥关系、校验以及 TXT/YML 导入导出。<br>Browser-based focus tree editor with relationship modeling, validation, and TXT/YML import and export. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4-focus-tree-designer) · [在线使用 / Web app](https://lesmiserablesmod.github.io/hoi4-focus-tree-designer/) |
+| **HOI4 State Merger** | 先预演、再写入的 State 合并工具；保留 Province，并提供备份与写后校验。<br>Dry-run-first State merger that preserves Provinces and includes backup and post-write validation. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4-state-merger) · [在线使用 / Web app](https://lesmiserablesmod.github.io/hoi4-state-merger/) |
 
-Please use the right channel so we can respond more efficiently:
+## 反馈与讨论 / Feedback
 
-- [Issues](https://github.com/LesMiserablesMod/.github/issues): bug reports, crashes, broken events, scripted logic problems, compatibility problems, and other concrete issues
-- [Discussions](https://github.com/orgs/LesMiserablesMod/discussions): gameplay ideas, lore discussion, balance suggestions, modding questions, and general community talk
+- 工具或代码的具体问题，请优先提交到对应仓库的 **Issues**。
+- MOD 的明确 Bug、崩溃、事件或脚本问题，可提交至 [组织 Issues](https://github.com/LesMiserablesMod/.github/issues)。
+- 玩法建议、世界观讨论、平衡意见与一般交流，请使用 [Discussions](https://github.com/orgs/LesMiserablesMod/discussions)。
 
-Before posting, please check whether the same issue or topic already exists.
+For tool-specific bugs, please use the relevant repository's **Issues**. Use the organization [Issues](https://github.com/LesMiserablesMod/.github/issues) for concrete mod problems, and [Discussions](https://github.com/orgs/LesMiserablesMod/discussions) for ideas, lore, balance, and general community talk.
 
-请尽量按类型使用对应入口，方便我们处理和归档：
+## 欢迎贡献 / Contributors Welcome
 
-- [Issues](https://github.com/LesMiserablesMod/.github/issues)：用于 Bug 反馈、崩溃、事件脚本错误、逻辑错误、兼容性问题等明确问题
-- [Discussions](https://github.com/orgs/LesMiserablesMod/discussions)：用于玩法建议、世界观与设定讨论、平衡性意见、MOD 制作交流和一般社区讨论
+我们欢迎事件与国策脚本、本地化撰写与翻译、图标与肖像制作、测试反馈，以及架空历史和地区内容研究。贡献不必很大：一个清晰的 Bug 报告、一张图标或一次小型修复同样有价值。
 
-发帖前请先检查是否已有重复内容。
-
-## Contributors Welcome / 欢迎贡献
-
-We welcome help from:
-
-- Scripters for events, effects, and focus trees
-- Writers, editors, and translators for localization
-- GFX artists for icons, portraits, and other assets
-- Playtesters who can provide clear bug reports and balance feedback
-- Researchers and designers interested in alternate history and regional content
-
-Small contributions are welcome. Even one bug report, one icon, or one event fix is valuable.
-
-我们欢迎以下方向的协作：
-
-- 事件、效果和国策树脚本开发
-- 本地化撰写、润色与翻译
-- 图标、肖像和其他资源制作
-- 愿意提供清晰反馈的测试者
-- 对架空历史、地区内容和玩法设计感兴趣的研究与设计协作者
-
-即使只是一次小型贡献也很有价值，比如一个 bug 反馈、一张图标或一个事件修复。
-
-## Repositories / 仓库导航
-
-Featured repositories and project links will be listed here as the organization grows.
-
-随着组织内容逐步整理，我们会在这里放出主要仓库和项目导航链接。
+We welcome scripting, localization, GFX, playtesting, historical research, and regional content contributions. Contributions of every size are valuable—even a clear bug report, a single icon, or a small fix.
 
 ![Recruitment poster](fig/recruitment%20.jpg)
 
-*Recruitment / 招募信息：we are looking for planning, art, and development contributors. If you want to join or ask about collaboration, please contact us via QQ or Bilibili.*
+*招募方向：策划、美术与开发。希望参与项目或进一步了解协作方式，可通过招募海报中的 QQ、Bilibili 联系方式，或在 Discussions 中与我们交流。*
 
-*招募说明：我们目前招募策划、美术与开发成员。如希望参与项目，或想进一步了解协作方式，请通过 QQ 或 B 站联系我们。*
+*We are looking for planning, art, and development contributors. Contact us through the QQ or Bilibili details shown in the poster, or start a conversation in Discussions.*
