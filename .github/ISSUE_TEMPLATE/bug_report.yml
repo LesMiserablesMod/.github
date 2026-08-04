@@ -65,7 +65,7 @@ body:
     attributes:
       label: Game Version and Checksum / 游戏版本与校验码
       description: Copy the exact version and checksum shown by the launcher or main menu.
-      placeholder: 1.19.x (checksum)
+      placeholder: 1.19.* (checksum)
     validations:
       required: true
 
