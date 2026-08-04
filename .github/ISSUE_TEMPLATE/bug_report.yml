@@ -1,4 +1,4 @@
-﻿name: Bug Report / Bug 反馈
+name: Bug Report / Bug 反馈
 description: Report a crash, broken event, broken effect, compatibility problem, or other technical issue. / 提交崩溃、事件错误、效果错误、兼容性问题等技术性故障。
 title: "[Bug / 问题]: "
 labels:
@@ -63,9 +63,9 @@ body:
   - type: input
     id: game_version
     attributes:
-      label: Game Version / 游戏版本
-      description: For example, 1.15.x
-      placeholder: 1.15.x
+      label: Game Version and Checksum / 游戏版本与校验码
+      description: Copy the exact version and checksum shown by the launcher or main menu.
+      placeholder: 1.19.x (checksum)
     validations:
       required: true
 
@@ -74,7 +74,7 @@ body:
     attributes:
       label: Mod Version / MOD 版本
       description: Branch, release tag, or build date if known.
-      placeholder: main / v0.x.x / 2026-03-20 build
+      placeholder: main / v0.x.x / YYYY-MM-DD build
     validations:
       required: true
 
@@ -129,8 +129,8 @@ body:
     id: logs
     attributes:
       label: Logs, Screenshots, Save Files / 日志、截图、存档
-      description: Paste key error messages or drag files here if available.
-      placeholder: error.log excerpt, screenshot link, or save file notes
+      description: Attach screenshots or saves and paste the relevant error.log or crash log excerpt. Remove personal paths or sensitive information first.
+      placeholder: error.log excerpt, crash log, screenshot, or save file
     validations:
       required: false
 
