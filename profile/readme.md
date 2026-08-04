@@ -21,7 +21,7 @@ LesMiserablesMod is the development organization behind the *Les Misérables* al
 | 项目 / Project | 简介 / Description | 入口 / Links |
 | --- | --- | --- |
 | **HOI4 Modding Tools** | 双语 HOI4 制作工具、参考资料与工作流目录。<br>Bilingual catalog of HOI4 modding tools, references, and workflows. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4-modding-tools) · [文档 / Docs](https://lesmiserablesmod.github.io/hoi4-modding-tools/) |
-| **HOI4 Mod Utilities** | 原项目的维护镜像与分支，为 VS Code 提供地图、国策树、科技树、事件、GUI 与 GFX 等预览功能。<br>A maintenance mirror and fork of the VS Code extension for map, focus tree, technology, event, GUI, and GFX previews. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4modutilities) |
+| **HOI4 Mod Utilities** | 面向 VS Code 的 HOI4 开发扩展，提供地图、国策树、科技树、事件、GUI 与 GFX 等预览功能。<br>A VS Code extension for HOI4 map, focus tree, technology, event, GUI, and GFX previews. | [原作者仓库 / Original Repository](https://github.com/herbix/hoi4modutilities) |
 | **HOI4 Focus Tree Designer** | 浏览器端国策树设计器，支持前置与互斥关系、校验以及 TXT/YML 导入导出。<br>Browser-based focus tree editor with relationship modeling, validation, and TXT/YML import and export. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4-focus-tree-designer) · [在线使用 / Web app](https://lesmiserablesmod.github.io/hoi4-focus-tree-designer/) |
 | **HOI4 State Merger** | 先预演、再写入的 State 合并工具；保留 Province，并提供备份与写后校验。<br>Dry-run-first State merger that preserves Provinces and includes backup and post-write validation. | [仓库 / Repository](https://github.com/LesMiserablesMod/hoi4-state-merger) · [在线使用 / Web app](https://lesmiserablesmod.github.io/hoi4-state-merger/) |
 
